@@ -16,7 +16,7 @@ public class TrafficLight extends Thread {
     public List<Set<String>> getPossibleDirections() { return possibleDirections;}
 
     public void allowDirections() {
-        System.out.println("Светофор открыт для направлений: " + movingDirections);
+        System.out.println("The traffic light is open for directions: " + movingDirections);
         synchronized (lock) {
             Iterator<Car> iterator = cars.iterator();
             while (iterator.hasNext()) {
